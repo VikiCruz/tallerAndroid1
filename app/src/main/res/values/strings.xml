@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Taller1</string>
+
+
+    <string name="datos_personales">Datos personales</string>
+    <string name="documento">Documento</string>
+    <string name="nombre">Nombre completo</string>
+    <string name="edad">Edad</string>
+    <string name="telefono">Teléfono</string>
+    <string name="Direccion">Dirección</string>
+    <string name="materias_notas">Materias / Notas</string>
+    <string name="materia_1">Materia 1</string>
+    <string name="nota_1">Nota 1</string>
+    <string name="materia_2">Materia 2</string>
+    <string name="nota_2">Nota 2</string>
+    <string name="materia_3">Materia 3</string>
+    <string name="nota_3">Nota 3</string>
+    <string name="materia_4">Materia 4</string>
+    <string name="nota_4">Nota 4</string>
+    <string name="materia_5">Materia 5</string>
+    <string name="nota_5">Nota 5</string>
+    <string name="calcular_1">CALCULAR</string>
+
+
+    <string name="mis_peque_os_saltamontes">Mis Pequeños Saltamontes</string>
+    <string name="registro_1">REGISTRO</string>
+    <string name="estadisticas_1">ESTADISTICAS</string>
+    <string name="ayuda_1">AYUDA</string>
+    <string name="autor">De Viki Cruz</string>
+
+
+    <string name="ayuda_Principal">Información Del Sistema</string>
+    <string name="btn_atras">Atras</string>
+    <string name="informacion">
+        1. El programa esta desarrollado para obtener el promedio del periodo lectivo, una nota por materia.\n2.
+        El programa esta desarrollado para obtener el promedio de 5 materias, una nota por materia.
+    </string>
+</resources>
