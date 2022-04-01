@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
-import android.view.animation.Animation
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 
@@ -26,7 +25,7 @@ class splash : AppCompatActivity() {
     }
     private fun cambiarActivity() {
         Handler().postDelayed(Runnable{
-            val iniciar = Intent(this,Bienvenida::class.java)
+            val iniciar = Intent(this,MainActivity::class.java)
             startActivity(iniciar)//inicio la actividad
         },DURACION)
 

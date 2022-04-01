@@ -31,8 +31,13 @@
 
     <string name="ayuda_Principal">Información Del Sistema</string>
     <string name="btn_atras">Atras</string>
+    <string name="Titulo">Bienvenid@ a nuestra aplicacion de calificaciones\n</string>
     <string name="informacion">
-        1. El programa esta desarrollado para obtener el promedio del periodo lectivo, una nota por materia.\n2.
-        El programa esta desarrollado para obtener el promedio de 5 materias, una nota por materia.
+        \nEl programa permite llevar un registro de estudiantes y el estado de estos en cuanto a las notas obtenidas en cada
+        materia, ingresando 5 materias en cada periodo.\n
+
+        \nSe cuenta con un menú donde podrá registrar estudiantes con sus respectivas notas y materias,
+        la opcion de filtrar las estadisticas de los estudiantes procesados, de quienes ganan, pierden y pueden recuperar el periodo.\n
+
     </string>
 </resources>

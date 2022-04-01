@@ -10,13 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Taller1">
         <activity
+            android:name=".EstadisticasP"
+            android:exported="false" />
+
+        <activity
             android:name=".Ayuda"
             android:exported="false" />
         <activity
-            android:name=".Bienvenida"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Registro"
             android:exported="false" />
         <activity
             android:name=".splash"
