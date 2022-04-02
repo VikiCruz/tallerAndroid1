@@ -26,7 +26,6 @@ class Registro : AppCompatActivity() {
     var campoNota4:EditText?=null
     var campoNota5:EditText?=null
 
-    var operaciones:Operaciones?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,8 +40,6 @@ class Registro : AppCompatActivity() {
 
     private fun iniciarComponentes() {
         //Se instancia la clase operaciones
-        operaciones= Operaciones()
-
         campoDocumento=findViewById(R.id.editTextTextDocumento)
         campoNombre=findViewById(R.id.editTextTextNombre)
         campoEdad=findViewById(R.id.editTextEdad)
@@ -61,22 +58,20 @@ class Registro : AppCompatActivity() {
         campoNota4=findViewById(R.id.editTextTextNota4)
         campoNota5=findViewById(R.id.editTextTextNota5)
 
-        var btnRegistro:Button=findViewById(R.id.btnCalcular)
-        btnRegistro.setOnClickListener { registrarEstudiante() }
+        var btnCalcular:Button=findViewById(R.id.btnCalcular)
+        btnCalcular.setOnClickListener { registrarEstudiante() }
 
     }
 
     private fun registrarEstudiante() {
         //Se instancia la clase estudiante y se mapean los elementos del formulario
-        var est:Estudiante= Estudiante()
+        val est:Estudiante= Estudiante()
         est.documento= campoDocumento?.text.toString()
         est.nombre=campoNombre?.text.toString()
         est.edad=campoEdad?.text.toString().toInt()
         est.direccion=campoDireccion?.text.toString()
         est.telefono=campoTelefono?.text.toString()
 
-
-        //Si se va a trabajar las materias y notas en la misma clase Estudiante
         est.materia1=campoMateria1?.text.toString()
         est.materia2=campoMateria2?.text.toString()
         est.materia3=campoMateria3?.text.toString()
@@ -89,17 +84,9 @@ class Registro : AppCompatActivity() {
         est.nota4= campoNota4?.text.toString().toDouble()
         est.nota5= campoNota5?.text.toString().toDouble()
 
-        //Se asigna el promedio delegando el calculo al metodo de la clase operaciones
-        est.promedio= operaciones!!.calcularPromedio(est)
-
-        operaciones?.registrarEstudiante(est)
-
-        operaciones?.imprimirListaEstudiantes()
-
+        est.promedio= Operaciones.calcularPromedio(est)
+        Operaciones.registrarEstudiante(est)
+        Operaciones.imprimirListaEstudiantes()
 }
 
-    fun onRegistrarClick() {
-        val iniciar = Intent(this,MainActivity::class.java)
-        startActivity(iniciar)//inicio la actividad
-    }
 }

@@ -1,23 +1,22 @@
 package com.example.taller1
 
 class Operaciones {
-    var listaEstudiantes: ArrayList<Estudiante> =arrayListOf<Estudiante>()
+    companion object {
+        val listaEstudiantes: ArrayList<Estudiante> =arrayListOf<Estudiante>()
 
-    fun registrarEstudiante(estudiante: Estudiante){
-
-        listaEstudiantes.add(estudiante)
-    }
-
-    fun imprimirListaEstudiantes(){
-        for(est in listaEstudiantes){
-            println(est)
+        fun registrarEstudiante(estudiante: Estudiante){
+            this.listaEstudiantes.add(estudiante)
         }
-    }
 
-    fun calcularPromedio(est: Estudiante): Double {
+        fun imprimirListaEstudiantes(){
+            for(est in listaEstudiantes){
+                println(est)
+            }
+        }
 
-        var prom=(est.nota1+est.nota2+est.nota3+est.nota4+est.nota5)/5
+        fun calcularPromedio(est: Estudiante): Double {
+            return (est.nota1+est.nota2+est.nota3+est.nota4+est.nota5)/5
+        }
 
-        return prom
     }
 }
