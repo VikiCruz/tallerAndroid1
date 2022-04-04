@@ -58,7 +58,7 @@ class Registro : AppCompatActivity() {
         campoNota4=findViewById(R.id.editTextTextNota4)
         campoNota5=findViewById(R.id.editTextTextNota5)
 
-        var btnCalcular:Button=findViewById(R.id.btnCalcular)
+        var btnCalcular:Button=findViewById(R.id.btnRegistro)
         btnCalcular.setOnClickListener { registrarEstudiante() }
 
     }

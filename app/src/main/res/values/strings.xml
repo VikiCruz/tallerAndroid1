@@ -19,7 +19,7 @@
     <string name="nota_4">Nota 4</string>
     <string name="materia_5">Materia 5</string>
     <string name="nota_5">Nota 5</string>
-    <string name="calcular_1">CALCULAR</string>
+    <string name="btn_registrar">REGISTRAR</string>
 
 
     <string name="mis_peque_os_saltamontes">Mis Pequeños Saltamontes</string>
@@ -38,6 +38,22 @@
 
         \nSe cuenta con un menú donde podrá registrar estudiantes con sus respectivas notas y materias,
         la opcion de filtrar las estadisticas de los estudiantes procesados, de quienes ganan, pierden y pueden recuperar el periodo.\n
-
     </string>
+
+
+    <string name="resutado_titulo">Resultado</string>
+    <string name="btn_aceptar">Aceptar</string>
+    <string name="resultado"></string>
+
+
+
+    <string name="titulo_estadistica">Lista de estudiantes</string>
+    <string name="titulo_resumen">Resumen</string>
+    <string name="ganan">Ganan</string>
+    <string name="pierden">Pierden</string>
+    <string name="procesados">Procesados</string>
+    <string name="recuperan">Recuperan</string>
+
+
 </resources>
+

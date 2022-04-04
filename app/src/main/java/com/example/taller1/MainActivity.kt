@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
 import android.widget.Button
-import androidx.activity.result.contract.ActivityResultContracts
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         when(boton){
             1->startActivity(Intent(this,Registro::class.java))
-            2->startActivity(Intent(this,EstadisticasP::class.java))
+            2->startActivity(Intent(this,ResultadoIndividual::class.java))
             3-> startActivity(Intent(this,Ayuda::class.java))
         }
 

@@ -10,9 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Taller1">
         <activity
-            android:name=".EstadisticasP"
+            android:name=".Estadisticas"
             android:exported="false" />
-
+        <activity
+            android:name=".ResultadoIndividual"
+            android:exported="false" />
         <activity
             android:name=".Ayuda"
             android:exported="false" />
